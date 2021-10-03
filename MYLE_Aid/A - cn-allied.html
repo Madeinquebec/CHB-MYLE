@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MYLE Aid</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style/css/general.css">
+    <link rel="stylesheet" href="style/css/banner.css">
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="MYLE Aid">
+    <link rel="apple-touch-icon" href="/img/icons/icon-152x152.png">
+    <meta name="theme-color" content="#2F3BA2">
+    <meta name="description" content="MYLE Aid Support App">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid img-fluid">
+            <div class="row text-center">
+                <div class="col-12">
+
+                    <!-- ************************************ -->
+                    <!-- ********** NAV BAR ***************** -->
+                    <!-- ************************************ -->
+
+                    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+                    <nav class="navbar navbar-expand-lg navbar-light header--link">
+                        <!-- Ce qu'on met ici ne sera pas dans le hamburger -->
+                        <a class="navbar-brand" href="#">
+                            <img id="imgLogo" src="img/logo/myleAidLogo.png" alt="Logo MYLE Aid">
+                        </a>
+
+                        <!-- Section hamburger' -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <!-- Image du hamburger -->
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                        <!-- Ci-dessous disparait dans le hamburger -->
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav mx-auto">
+                                <a class="nav-item nav-link" href="index.html">
+                                    <h5>Homepage</h5>
+                                </a>
+                                <a class="nav-item nav-link" href="#">
+                                    <h5>Waiting List</h5>
+                                </a>
+                                <a class="nav-item nav-link" href="#">
+                                    <h5>Task</h5>
+                                </a>
+                                <a class="nav-item nav-link active" href="cn.html">
+                                    <span class="sr-only">(current)</span>
+                                    <h5>Clinical Note</h5>
+                                </a>
+                                <button class="nav-link px-lg-4 px-2 text--strong" id="buttonInstall"
+                                    aria-label="Install" hidden>Installer MYLE Aid</button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- ************************************ -->
+    <!-- ********* Section: HEADER ********** -->
+    <!-- ************************************ -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center paddingTop--small paddingBottom--large">
+                    <div>
+                        <h1 class="text--strong">Allied Professional- Clinical Note</h1>
+
+                        <hr>
+
+                        <!-- ************************************ -->
+                        <!-- ********* Section: HEADER ********** -->
+                        <!-- ************************************ -->
+                        <h3 class="paddingTop--verySmall text--strong text--left">Note Header</h3>
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header background--blue" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            <h4 class="text--white">Header</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body text--left">
+                                        <p class="p__title">IMPORTANT: Before starting to write a note, it's very
+                                            important to make sure the context is correctly identified.</p>
+                                        <img class="img100" src="img/photos/cnHeader.png" alt="Header">
+                                        <p>
+                                            <ul class="p__text">
+                                                <li>Give the administrative context about who wrote the note and when
+                                                    the note was written. <span class="text--red">[A]</span></li>
+                                                <li>It’s this context that will appears in the list of Notes. <span
+                                                        class="text--red">[B]</span></li>
+                                                <li>The context can be modified by clicking on “Edit”. <span
+                                                        class="text--red">[C]</span></li>
+                                            </ul>
+                                            <hr>
+                                            <img class="img60" src="img/photos/cnHeaderContent.png" alt="Header">
+                                            </br></br>
+                                            <p class="p__title"><span class="text--red">[6]</span> Consultation Date:
+                                            </p>
+                                            <p class="p__text text--indent">
+                                                <span class="text--red">MANDATORY: </span><span class="text--strong">If
+                                                    the Date and Time differs from the Date and Time of the clinical
+                                                    intervention. </span>
+                                                <ul class="text--indent">
+
+                                                    <li>Change the Date and Time to reflect the real Date and Time of
+                                                        the
+                                                        clinical
+                                                        intervention.</li>
+                                                    <li>Add "Late Note" in the "Reason" Field.</li>
+                                                </ul>
+                                            </p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- ************************************ -->
+                        <!-- **** Section: MEDICAL SUMMARY ****** -->
+                        <!-- ************************************ -->
+                        <h3 class="paddingTop--verySmall text--strong text--left">Medical Summary</h3>
+                        <div id="accordion">
+
+                            <!-- ************************************ -->
+                            <!-- ********** ACTIVE PROBLEM ********** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--darkGrey" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo"
+                                            aria-expanded="true" aria-controls="collapseTwo">
+                                            <h4 class="text--white">Active Problems</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseTwo" class="collapse background--lightGrey"
+                                    aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title text--red">VERY IMPORTANT:<br>
+                                            *** This section reserved for MD ***
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- ******* PREVENTIVE ACTIVITY ******** -->
+                            <!-- ************************************ -->
+
+                            <div class="card">
+                                <div class="card-header background--darkGrey" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="true" aria-controls="collapseThree">
+                                            <h4 class="text--white">Preventive Activity</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
+                                    <div class="card-body background--lightGrey">
+                                        <p class="p__title text--red">VERY IMPORTANT:<br>
+                                            *** This section is reserved for MD ***
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- **** ALLERGIES AND INTOLERANCES **** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--darkGrey" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour"
+                                            aria-expanded="true" aria-controls="collapseFour">
+                                            <h4 class="text--white">Allergies and Intolerances</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseFour" class="collapse background--lightGrey"
+                                    aria-labelledby="headingFour" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title text--red">VERY IMPORTANT:<br>
+                                            *** This section is reserved for MD and Nurses ***
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- ******* SOCIAL HABITS ********** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--blue" id="headingFive">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive"
+                                            aria-expanded="true" aria-controls="collapseFive">
+                                            <h4 class="text--white">Social Habits</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- ***** ALERTS AND SPECIAL NEEDS ***** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--blue" id="headingSix">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix"
+                                            aria-expanded="true" aria-controls="collapseSix">
+                                            <h4 class="text--white">Alerts and Special Needs</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- ********* FAMILY HISTORY *********** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--darkGrey" id="headingSeven">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven"
+                                            aria-expanded="true" aria-controls="collapseSeven">
+                                            <h4 class="text--white">Family History</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                    data-parent="#accordion">
+                                    <div class="card-body background--lightGrey">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- ********** IMMUNIZATIONS *********** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--darkGrey" id="headingEight">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEight"
+                                            aria-expanded="true" aria-controls="collapseEight">
+                                            <h4 class="text--white">Immunizations</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseEight" class="collapse background--lightGrey"
+                                    aria-labelledby="headingEight" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- ******** ACTIVE MEDICATION ********* -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--darkGrey" id="headingNine">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseNine"
+                                            aria-expanded="true" aria-controls="collapseNine">
+                                            <h4 class="text--white">Active Medication</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseNine" class="collapse background--lightGrey"
+                                    aria-labelledby="headingNine" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- *********** VITAL SIGNS ************ -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--darkGrey" id="headingTen">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTen"
+                                            aria-expanded="true" aria-controls="collapseTen">
+                                            <h4 class="text--white">Vital Sign</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseTen" class="collapse background--lightGrey"
+                                    aria-labelledby="headingTen" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ************************************ -->
+                        <!-- ****** Section: PROGRESS NOTE ****** -->
+                        <!-- ************************************ -->
+                        <h3 class="paddingTop--verySmall text--strong text--left">Progress Note</h3>
+                        <div id="accordion">
+
+                            <!-- ************************************ -->
+                            <!-- ************* REASON *************** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--blue" id="headingEleven">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseEleven" aria-expanded="true"
+                                            aria-controls="collapseEleven">
+                                            <h4 class="text--white">Reason</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- **************** HPI *************** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--blue" id="headingTwelve">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseTwelve" aria-expanded="true"
+                                            aria-controls="collapseTwelve">
+                                            <h4 class="text--white">History of Present Illness</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- *********** VITAL SIGNS ************ -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--darkGrey" id="headingThirteen">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseThirteen" aria-expanded="true"
+                                            aria-controls="collapseThirteen">
+                                            <h4 class="text--white">Vital Signs</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseThirteen" class="collapse background--lightGrey"
+                                    aria-labelledby="headingThirteen" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- ************* EXAM ***************** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--darkGrey" id="headingFourteen">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseFourteen" aria-expanded="true"
+                                            aria-controls="collapseFourteen">
+                                            <h4 class="text--white">Exam</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen"
+                                    data-parent="#accordion">
+                                    <div class="card-body background--lightGrey">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- ********* HANDWRITTEN NOTES ******** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--blue" id="headingFifteen">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseFifteen" aria-expanded="true"
+                                            aria-controls="collapseFifteen">
+                                            <h4 class="text--white">Handwritten Notes</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- ************ LABORATORY ************ -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--darkGrey" id="headingSixteen">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseSixteen" aria-expanded="true"
+                                            aria-controls="collapseSixteen">
+                                            <h4 class="text--white">Laboratory</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseSixteen" class="collapse background--lightGrey"
+                                    aria-labelledby="headingSixteen" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- ************ IMAGING *************** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--darkGrey" id="headingSeventeen">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseSeventeen" aria-expanded="true"
+                                            aria-controls="collapseSeventeen">
+                                            <h4 class="text--white">Imaging</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseSeventeen" class="collapse background--lightGrey"
+                                    aria-labelledby="headingSeventeen" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- ** OTHER NOTES AND INTERVENTIONS *** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--blue" id="headingEightEighteen">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseEighteen" aria-expanded="true"
+                                            aria-controls="collapseEighteen">
+                                            <h4 class="text--white">Other Notes and Interventions</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ************************************ -->
+                        <!-- ********* Section: FORMS *********** -->
+                        <!-- ************************************ -->
+                        <h3 class="paddingTop--verySmall text--strong text--left">Forms</h3>
+                        <div id="accordion">
+
+                            <!-- ************************************ -->
+                            <!-- ************** FORMS *************** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--blue" id="headingNineteen">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseNineteen" aria-expanded="true"
+                                            aria-controls="collapseNineteen">
+                                            <h4 class="text--white">Forms</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseNineteen" class="collapse" aria-labelledby="headingNineteen"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- ************** CNESST ************** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--blue" id="headingTwenty">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseTwenty" aria-expanded="true"
+                                            aria-controls="collapseTwenty">
+                                            <h4 class="text--white">CNESST</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ************************************ -->
+                        <!-- ******* Section: ASSESSMENT ******** -->
+                        <!-- ************************************ -->
+                        <h3 class="paddingTop--verySmall text--strong text--left">Assessment</h3>
+                        <div id="accordion">
+
+                            <!-- ************************************ -->
+                            <!-- ********* PROBLEM / DIAGNOSIS ****** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--darkGrey" id="headingTwentyOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseTwentyOne" aria-expanded="true"
+                                            aria-controls="collapseTwentyOne">
+                                            <h4 class="text--white">Problem / Diagnosis</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseTwentyOne" class="collapse background--lightGrey"
+                                    aria-labelledby="headingTwentyOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ************************************ -->
+                        <!-- ********* Section: PLAN ************ -->
+                        <!-- ************************************ -->
+                        <h3 class="paddingTop--verySmall text--strong text--left">Plan</h3>
+                        <div id="accordion">
+
+                            <!-- ************************************ -->
+                            <!-- *********** PRESCRIPTION *********** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--darkGrey" id="headingTwentyTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseTwentyTwo" aria-expanded="true"
+                                            aria-controls="collapseTwentyTwo">
+                                            <h4 class="text--white">Prescription</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseTwentyTwo" class="collapse background--lightGrey"
+                                    aria-labelledby="headingTwentyTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- *********** EXAM REQUEST *********** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--darkGrey" id="headingTwentyThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseTwentyThree" aria-expanded="true"
+                                            aria-controls="collapseTwentyThree">
+                                            <h4 class="text--white">Exam Request</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseTwentyThree" class="collapse background--lightGrey"
+                                    aria-labelledby="headingTwentyThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- ****** CONSULTATION REQUEST ******** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--blue" id="headingTwentyFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseTwentyFour" aria-expanded="true"
+                                            aria-controls="collapseTwentyFour">
+                                            <h4 class="text--white">Consultation Request</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseTwentyFour" class="collapse" aria-labelledby="headingTwentyFour"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- ******** FOLLOW UP AND PLAN ******** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--blue" id="headingTwentyFive">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseTwentyFive" aria-expanded="true"
+                                            aria-controls="collapseTwentyFive">
+                                            <h4 class="text--white">Follow Up and Plan</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseTwentyFive" class="collapse" aria-labelledby="headingTwentyFive"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************ -->
+                            <!-- *********** COMMUNICATION ********** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--blue" id="headingTwentySix">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse"
+                                            data-target="#collapseTwentySix" aria-expanded="true"
+                                            aria-controls="collapseTwentySix">
+                                            <h4 class="text--white">Communications</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseTwentySix" class="collapse" aria-labelledby="headingTwentySix"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="p__title">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+
+    <!-- ************************************ -->
+    <!-- **** Section: OTHER INFORMATION **** -->
+    <!-- ************************************ -->
+    <section>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center paddingTop--small paddingBottom--large">
+
+                    <div>
+                        <h3 class="paddingTop--verySmall text--strong text--left">--- OTHER INFORMATION ---</h3>
+                    </div>
+
+                    <!-- ************************************ -->
+                    <!-- ******* Section: CARE PLAN ********* -->
+                    <!-- ************************************ -->
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingTwentySeven">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse"
+                                        data-target="#collapseTwentySeven" aria-expanded="false"
+                                        aria-controls="collapseTwentySeven">
+                                        <h4 CLASS="text--strong">CARE PLAN</h4>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseTwentySeven" class="collapse" aria-labelledby="headingTwentySeven"
+                                data-parent="#accordion">
+                                <div class="card-body">
+
+                                    <!-- ************************************ -->
+                                    <!-- *** Section: CARE PLAN * INSIDE **** -->
+                                    <!-- ************************************ -->
+                                    <div id="accordion">
+                                        <!-- *************** CARE PLAN - DM2 (+/- NEXT, LAST) *************** -->
+                                        <div class="card">
+                                            <div class="card-header" id="headingTwentyEight">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link" data-toggle="collapse"
+                                                        data-target="#collapseTwentyEight" aria-expanded="false"
+                                                        aria-controls="collapseTwentyEight">
+                                                        <h5 class="text--strong">Care Plan - DM2 (+/- NEXT, LAST)</h5>
+                                                    </button>
+                                                </h5>
+                                            </div>
+
+                                            <div id="collapseTwentyEight" class="collapse"
+                                                aria-labelledby="headingTwentyEight" data-parent="#accordion">
+                                                <div class="card-body text--left paddingLeft--verySmall">
+
+                                                    <br>
+                                                    <h5 class="text--strong text-center">Care Plan Type 2 Diabetes</h5>
+
+                                                    <br>
+                                                    <p><span class="text--strong">PREVENTIVE ACTIVITY:
+                                                            IMMUNIZATIONS</span> <br>
+                                                        <ul>
+                                                            <li>Follow PIQ for Anti-tetanus</li>
+                                                            <li>Follow PIQ for pneumococcal vaccination</li>
+                                                            <li>Follow PIQ for Zoster-SU vaccine ( >50 yrs)</li>
+                                                            <li>Follow PIQ for HPV vaccine ( women between 18-45 yrs and
+                                                                men
+                                                                9-26 yrs)</li>
+                                                        </ul>
+                                                    </p>
+
+                                                    <br>
+                                                    <p><span class="text--strong">PREVENTIVE ACTIVITY: CANCER</span>
+                                                        <br>
+                                                        <ul>
+                                                            <li>Q2 y Mammography ( 50-69 yrs)</li>
+                                                            <li>Q3 y Pap test (21-65 yrs)</li>
+                                                            <li>Q2 y Fit Test (50-74 yrs) if no colonoscopy in the past
+                                                                10
+                                                                yrs.</li>
+                                                        </ul>
+                                                    </p>
+
+                                                    <br>
+                                                    <p><span class="text--strong">PREVENTIVE ACTIVITY: METABOLIC
+                                                            DISEASES</span> <br>
+                                                        <ul>
+                                                            <li>Q1 y Monofilament and foot exam</li>
+                                                            <li>Q2 y Diabetic retinopathy screening</li>
+                                                            <li>Q5 y ECG (If cardiac disease: EKG q 1y)</li>
+                                                        </ul>
+                                                    </p>
+
+
+                                                    <br>
+                                                    <p><span class="text--strong">LABORATORY:</span> <br>
+                                                        <ul>
+                                                            <li>Q 3 to 6 mo HbA1C</li>
+                                                            <li>Q1 y Creat, Electrolytes, AcRatio</li>
+                                                            <li>Q3 y Lipid</li>
+                                                        </ul>
+                                                    </p>
+
+                                                    <br>
+                                                    <p><span class="text--strong">OTHER</span></p>
+
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- *************** CARE PLAN - DM2 (+/- NEXT, LAST; SECTIONS) *************** -->
+                                        <div class="card">
+                                            <div class="card-header" id="headingTwentyNine">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseTwentyNine" aria-expanded="false"
+                                                        aria-controls="collapseTwentyNine">
+                                                        <h5 class="text--strong">Care Plan - DM2 (+/- NEXT, LAST;
+                                                            Sections)</h5>
+                                                    </button>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseTwentyNine" class="collapse"
+                                                aria-labelledby="headingTwentyNine" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <p class="text--strong">Care Plan Type 2 Diabetes</p>
+
+                                                    <br>
+                                                    <p><span class="text--strong">PREVENTIVE ACTIVITY:
+                                                            IMMUNIZATIONS</span> <br>
+                                                        Follow PIQ for Anti-tetanus<br>
+                                                        Follow PIQ for pneumococcal vaccination<br>
+                                                        Follow PIQ for Zoster-SU vaccine ( >50 yrs)<br>
+                                                        Follow PIQ for HPV vaccine ( women between 18-45 yrs and men
+                                                        9-26 yrs)
+                                                    </p>
+
+                                                    <br>
+                                                    <p><span class="text--strong">PREVENTIVE ACTIVITY: CANCER</span>
+                                                        <br>
+                                                        Q2 y Mammography ( 50-69 yrs)<br>
+                                                        Q3 y Pap test (21-65 yrs)<br>
+                                                        Q2 y Fit Test (50-74 yrs) if no colonoscopy in the past 10
+                                                        yrs.<br>
+                                                    </p>
+
+                                                    <br>
+                                                    <p><span class="text--strong">PREVENTIVE ACTIVITY: METABOLIC
+                                                            DISEASES</span> <br>
+                                                        Q1 y Monofilament and foot exam<br>
+                                                        Q2 y Diabetic retinopathy screening<br>
+                                                        Q5 y ECG (If cardiac disease: EKG q 1y)<br>
+                                                    </p>
+
+
+                                                    <br>
+                                                    <p><span class="text--strong">LABORATORY:</span> <br>
+                                                        Q 3 to 6 mo HbA1C<br>
+                                                        Q1 y Creat, Electrolytes, AcRatio<br>
+                                                        Q3 y Lipid<br>
+                                                    </p>
+
+                                                    <br>
+                                                    <p><span class="text--strong">OTHER</span></p>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- *************** CARE PLAN - DM2 (+/- NEXT, LAST; ONE PIECE) *************** -->
+                                        <div class="card">
+                                            <div class="card-header" id="headingThirty">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseThirty" aria-expanded="false"
+                                                        aria-controls="collapseThirty">
+                                                        <h5 class="text--strong">Care Plan - DM2 (+/- NEXT, LAST; One
+                                                            piece)</h5>
+                                                    </button>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseThirty" class="collapse" aria-labelledby="headingThirty"
+                                                data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                    terry
+                                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                    skateboard
+                                                    dolor
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- *************** CARE PLAN - DM2 (ONE PIECE) *************** -->
+                                        <div class="card">
+                                            <div class="card-header" id="headingThirty">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseThirty" aria-expanded="false"
+                                                        aria-controls="collapseThirty">
+                                                        <h5 class="text--strong">Care Plan - DM2 (Sections)</h5>
+                                                    </button>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseThirty" class="collapse" aria-labelledby="headingThirty"
+                                                data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                    terry
+                                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                    skateboard
+                                                    dolor
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- *************** CARE PLAN - DM2 (SECTIONS) *************** -->
+                                        <div class="card">
+                                            <div class="card-header" id="headingThirty">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseThirty" aria-expanded="false"
+                                                        aria-controls="collapseThirty">
+                                                        <h5 class="text--strong">Care Plan - DM2 (+/- NEXT, LAST)</h5>
+                                                    </button>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseThirty" class="collapse" aria-labelledby="headingThirty"
+                                                data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                    terry
+                                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                    skateboard
+                                                    dolor
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ************************************ -->
+    <!-- ********** PIED DE PAGE ************ -->
+    <!-- ************************************ -->
+
+    <footer>
+        <div class="container-fluid background--black text--white paddingTop--large paddingBottom--large">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h4>MYLE Support</h4>
+                    <p>
+                        <h6>18tcr.emrsupport@ssss.gouv.qc.ca</h6>
+                    </p>
+                    <p>
+                        <h6>(418) 923-3376 Ext.42111</h6>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="service-worker.js"></script>
+    <script src="js/install.js"></script>
+
+</body>
+
+</html>

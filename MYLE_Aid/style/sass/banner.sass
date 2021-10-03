@@ -1,0 +1,19 @@
+//banner.sass
+//Programme par : Eric Gosselin
+//Derniere modification : 2021-08-28
+
+@mixin background($imgpath,$position: 0 0,$repeat: no-repeat,$size:100% 100%)
+    background:
+        image: url($imgpath)
+        position: $position
+        repeat: $repeat
+        size: $size
+
+.banner--padding
+    padding: 14%
+
+.banner__backgroundImage
+    @include background('../../img/photos/crossfit_workout.jpg')
+
+.banner__text--softWhite
+    color: #e4e4e4

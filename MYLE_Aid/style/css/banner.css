@@ -1,0 +1,14 @@
+.banner--padding {
+  padding: 14%;
+}
+
+.banner__backgroundImage {
+  background-image: url("../../img/photos/crossfit_workout.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.banner__text--softWhite {
+  color: #e4e4e4;
+}/*# sourceMappingURL=banner.css.map */

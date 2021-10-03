@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MYLE Aid</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style/css/general.css">
+    <link rel="stylesheet" href="style/css/banner.css">
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="MYLE Aid">
+    <link rel="apple-touch-icon" href="/img/icons/icon-152x152.png">
+    <meta name="theme-color" content="#2F3BA2">
+    <meta name="description" content="MYLE Aid Support App">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid img-fluid">
+            <div class="row text-center">
+                <div class="col-12">
+
+                    <!-- ************************************ -->
+                    <!-- ********** NAV BAR ***************** -->
+                    <!-- ************************************ -->
+
+                    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+                    <nav class="navbar navbar-expand-lg navbar-light header--link">
+                        <!-- Ce qu'on met ici ne sera pas dans le hamburger -->
+                        <a class="navbar-brand" href="#">
+                            <img id="imgLogo" src="img/logo/myleAidLogo.png" alt="Logo MYLE Aid">
+                        </a>
+
+                        <!-- Section hamburger' -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <!-- Image du hamburger -->
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                        <!-- Ci-dessous disparait dans le hamburger -->
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav mx-auto">
+                                <a class="nav-item nav-link" href="index.html">
+                                    <h5>Homepage</h5>
+                                </a>
+                                <a class="nav-item nav-link active" href="cn.html">
+                                    <span class="sr-only">(current)</span>
+                                    <h5>Clinical Note</h5>
+                                </a>
+                                <button class="nav-link px-lg-4 px-2 text--strong" id="buttonInstall"
+                                    aria-label="Install" hidden>Installer MYLE Aid</button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- ************************************ -->
+    <!-- ******* Section #1 - BANNER ******** -->
+    <!-- ************************************ -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center paddingTop--small">
+                    <div>
+                        <h1 class="text--strong paddingBottom--small">Clinical Note</h1>
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="text--strong">I am a...</h2>
+                            </div>
+                            <div class="card-body">
+                                </br>
+                                <a href="cn-md.html" type="button" class="btn btn-primary btn-lg background--blue">
+                                    <h3>Physician</h3>
+                                </a></br>
+                                </br>
+                                <a href="cn-nurse.html" type="button" class="btn btn-primary btn-lg background--blue">
+                                    <h3>Nurse</h3>
+                                </a></br>
+                                </br>
+                                <a href="cn-pccr.html" type="button" class="btn btn-primary btn-lg background--blue">
+                                    <h3>PCCR</h3>
+                                </a></br>
+                                </br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+    <!-- ************************************ -->
+    <!-- ********** PIED DE PAGE ************ -->
+    <!-- ************************************ -->
+
+    <footer>
+        <div class="container-fluid background--black text--white paddingTop--large paddingBottom--large">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h4>MYLE Support</h4>
+                    <p>
+                        <h6>18tcr.emrsupport@ssss.gouv.qc.ca</h6>
+                    </p>
+                    <p>
+                        <h6>(418) 923-3376 Ext.42111</h6>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="service-worker.js"></script>
+    <script src="js/install.js"></script>
+
+</body>
+
+</html>

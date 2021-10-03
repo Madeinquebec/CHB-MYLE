@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MYLE Aid</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style/css/general.css">
+    <link rel="stylesheet" href="style/css/banner.css">
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="MYLE Aid">
+    <link rel="apple-touch-icon" href="/img/icons/icon-152x152.png">
+    <meta name="theme-color" content="#2F3BA2">
+    <meta name="description" content="MYLE Aid Support App">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid img-fluid">
+            <div class="row text-center">
+                <div class="col-12">
+
+                    <!-- ************************************ -->
+                    <!-- ********** NAV BAR ***************** -->
+                    <!-- ************************************ -->
+
+                    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+                    <nav class="navbar navbar-expand-lg navbar-light header--link">
+                        <!-- Ce qu'on met ici ne sera pas dans le hamburger -->
+                        <a class="navbar-brand" href="#">
+                            <img id="imgLogo" src="img/logo/myleAidLogo.png" alt="Logo MYLE Aid">
+                        </a>
+
+                        <!-- Section hamburger' -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <!-- Image du hamburger -->
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                        <!-- Ci-dessous disparait dans le hamburger -->
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav mx-auto">
+                                <a class="nav-item nav-link" href="index.html">
+                                    <h5>Homepage</h5>
+                                </a>
+                                <a class="nav-item nav-link active" href="cn.html">
+                                    <span class="sr-only">(current)</span>
+                                    <h5>Clinical Note</h5>
+                                </a>
+                                <button class="nav-link px-lg-4 px-2 text--strong" id="buttonInstall"
+                                    aria-label="Install" hidden>Installer MYLE Aid</button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- ************************************ -->
+    <!-- ****** CLINICAL NOTE CONTENT ******* -->
+    <!-- ************************************ -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center paddingTop--small paddingBottom--large">
+                    <div>
+                        <h1 class="text--strong"></br>PCCR - Clinical Note</h1>
+
+                        <hr>
+
+                        <h3 class="paddingTop--verySmall text--strong text--left">Note Header</h3>
+                        <div id="accordion">
+
+
+                            <!-- ************************************ -->
+                            <!-- ************** HEADER ************** -->
+                            <!-- ************************************ -->
+                            <div class="card">
+                                <div class="card-header background--blue" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            <h4 class="text--white">Header</h4>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body text--left">
+                                        <div class="paddingTop--verySmall">
+                                            <div class="background--important">
+                                                <p class="p__title text-center">IMPORTANT</p>
+                                                <p class="p__text text--strong text-center">
+                                                    Before starting to write a note, it's very
+                                                    important to make sure the context is correctly
+                                                    identified.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="paddingTop--small">
+                                            <p> <span class="p__title">Purpose: </span>
+                                                To give the administrative context of the note.</p>
+                                        </div>
+
+                                        <!-- ********* GREEN BOX CONTENT ********** -->
+                                        <div class="paddingTop--verySmall paddingBottom--small">
+                                            <div class="background--workflow">
+                                                <p class="p__title text-center">HOW TO ADJUST THE NOTE HEADER:
+                                                </p>
+                                                <p class="p__text text--strong">
+                                                    <ul>
+                                                        <li class="text--strong">To give the administrative context
+                                                            about who wrote the note and when the note was written <span
+                                                                class="text--red">[A]</span>.</li>
+                                                        <li class="text--strong">It’s this context that will appears in
+                                                            the list of Notes <span class="text--red">[B]</span>.
+                                                        <li class="text--strong">The context can be modified by clicking
+                                                            on “Edit” <span class="text--red">[C]</span>.
+                                                    </ul>
+                                                </p>
+                                                <img class="img100 paddingTop--verySmall" src="img/photos/Header.png"
+                                                    alt="Header">
+                                            </div>
+                                        </div>
+
+                                        <!-- ************************** -->
+                                        <!-- ********* TABLE ********** -->
+                                        <!-- ************************** -->
+                                        <div class="table__border">
+                                            <!-- ********* Image Screenshot ********** -->
+                                            <img class="img70 img__padding img--center"
+                                                src="img/photos/HeaderContent.png" alt="Header Content Form">
+                                        </div>
+
+                                        <div class="table__border">
+                                            <!-- ********* 6. Consultation Date ********** -->
+                                            <div>
+                                                <p class="p__title text--indentSmall"><span class="text--red">[6]</span>
+                                                    Consultation Date
+                                                </p>
+                                                <p class="p__text text--indentSmall">
+                                                    <span class="text--red">MANDATORY: </span><span
+                                                        class="text--strong">If
+                                                        the date and time differs from the date and time of the
+                                                        clinical
+                                                        intervention. </span>
+                                                    <ul class="p__text text--indentSmall">
+                                                        <li>Change the date and time to reflect the real date and time
+                                                            of
+                                                            the clinical intervention.</li>
+                                                        <li>Add "Late Note" in the "Reason" field.</li>
+                                                    </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- ************************************ -->
+                            <!-- **** Section: MEDICAL SUMMARY ****** -->
+                            <!-- ************************************ -->
+                            <h3 class="paddingTop--verySmall text--strong text--left">Medical Summary</h3>
+                            <div id="accordion">
+
+                                <!-- ************************************ -->
+                                <!-- ********** ACTIVE PROBLEM ********** -->
+                                <!-- ************************************ -->
+                                <div class="card">
+                                    <div class="card-header background--darkGrey" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseTwo" aria-expanded="true"
+                                                aria-controls="collapseTwo">
+                                                <h4 class="text--white">Active Problems</h4>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseTwo" class="collapse background--lightGrey"
+                                        aria-labelledby="headingTwo" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p class="p__title background--veryImportant text--white">VERY
+                                                IMPORTANT:<br>
+                                                Do not use this field.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- ************************************ -->
+                                <!-- ******* PREVENTIVE ACTIVITY ******** -->
+                                <!-- ************************************ -->
+                                <div class="card">
+                                    <div class="card-header background--darkGrey" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseThree" aria-expanded="true"
+                                                aria-controls="collapseThree">
+                                                <h4 class="text--white">Preventive Activity</h4>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p class="p__title background--veryImportant text--white">VERY
+                                                IMPORTANT:<br>
+                                                Do not use this field.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- ************************************ -->
+                                <!-- **** ALLERGIES AND INTOLERANCES **** -->
+                                <!-- ************************************ -->
+                                <div class="card">
+                                    <div class="card-header background--darkGrey" id="headingFour">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseFour" aria-expanded="true"
+                                                aria-controls="collapseFour">
+                                                <h4 class="text--white">Allergies and Intolerances</h4>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p class="p__title background--veryImportant text--white">VERY
+                                                IMPORTANT:<br>
+                                                Do not use this field.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- ************************************ -->
+                                <!-- ******* SOCIAL HABITS ********** -->
+                                <!-- ************************************ -->
+                                <div class="card">
+                                    <div class="card-header background--darkGrey" id="headingFive">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseFive" aria-expanded="true"
+                                                aria-controls="collapseFive">
+                                                <h4 class="text--white">Social Habits</h4>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p class="p__title background--veryImportant text--white">VERY
+                                                IMPORTANT:<br>
+                                                Do not use this field.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- ************************************ -->
+                                <!-- ***** ALERTS AND SPECIAL NEEDS ***** -->
+                                <!-- ************************************ -->
+                                <div class="card">
+                                    <div class="card-header background--darkGrey" id="headingSix">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseSix" aria-expanded="true"
+                                                aria-controls="collapseSix">
+                                                <h4 class="text--white">Alerts and Special Needs</h4>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p class="p__title background--veryImportant text--white">VERY
+                                                IMPORTANT:<br>
+                                                Do not use this field.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- ************************************ -->
+                                <!-- ********* FAMILY HISTORY *********** -->
+                                <!-- ************************************ -->
+                                <div class="card">
+                                    <div class="card-header background--darkGrey" id="headingSeven">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseSeven" aria-expanded="true"
+                                                aria-controls="collapseSeven">
+                                                <h4 class="text--white">Family History</h4>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p class="p__title background--veryImportant text--white">VERY
+                                                IMPORTANT:<br>
+                                                Do not use this field.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- ************************************ -->
+                                <!-- ********** IMMUNIZATIONS *********** -->
+                                <!-- ************************************ -->
+                                <div class="card">
+                                    <div class="card-header background--darkGrey" id="headingEight">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseEight" aria-expanded="true"
+                                                aria-controls="collapseEight">
+                                                <h4 class="text--white">Immunizations</h4>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseEight" class="collapse background--lightGrey"
+                                        aria-labelledby="headingEight" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p class="p__title background--veryImportant text--white">VERY
+                                                IMPORTANT:<br>
+                                                Do not use this field.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- ************************************ -->
+                                <!-- ******** ACTIVE MEDICATION ********* -->
+                                <!-- ************************************ -->
+                                <div class="card">
+                                    <div class="card-header background--darkGrey" id="headingNine">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseNine" aria-expanded="true"
+                                                aria-controls="collapseNine">
+                                                <h4 class="text--white">Active Medication</h4>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseNine" class="collapse background--lightGrey"
+                                        aria-labelledby="headingNine" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p class="p__title background--veryImportant text--white">VERY
+                                                IMPORTANT:<br>
+                                                Do not use this field.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- ************************************ -->
+                                <!-- *********** VITAL SIGNS ************ -->
+                                <!-- ************************************ -->
+                                <div class="card">
+                                    <div class="card-header background--darkGrey" id="headingTen">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseTen" aria-expanded="true"
+                                                aria-controls="collapseTen">
+                                                <h4 class="text--white">Vital Signs</h4>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseTen" class="collapse background--lightGrey"
+                                        aria-labelledby="headingTen" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p class="p__title background--veryImportant text--white">VERY
+                                                IMPORTANT:<br>
+                                                Do not use this field.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- ************************************ -->
+                                <!-- ****** Section: PROGRESS NOTE ****** -->
+                                <!-- ************************************ -->
+                                <h3 class="paddingTop--verySmall text--strong text--left">Progress Note</h3>
+                                <div id="accordion">
+
+                                    <!-- ************************************ -->
+                                    <!-- ************* REASON *************** -->
+                                    <!-- ************************************ -->
+
+                                    <div class="card">
+                                        <div class="card-header background--blue" id="headingEleven">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse"
+                                                    data-target="#collapseEleven" aria-expanded="true"
+                                                    aria-controls="collapseEleven">
+                                                    <h4 class="text--white">Reason</h4>
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
+                                            data-parent="#accordion">
+                                            <div class="card-body text--left">
+                                                <div class="paddingTop--verySmall">
+                                                    <div class="background--important">
+                                                        <p class="p__title text-center">IMPORTANT</p>
+                                                        <p class="p__text text--strong text-center">
+                                                            Always enter a reason when creating a note because the
+                                                            content of the “Reason” field becomes the
+                                                            title for each note that appear in the list of notes
+                                                            <span class="text--red">[A]</span>.
+                                                            So, it's easier to navigate the list of notes.
+                                                        </p>
+                                                        <img class="img100 img__padding img--center"
+                                                            src="img/photos/ReasonList.png"
+                                                            alt="Reason List Screenshot">
+                                                    </div>
+                                                </div>
+
+                                                <div class="paddingTop--small">
+                                                    <p> <span class="p__title">Purpose: </span>
+                                                        To document the consultation reason.</p>
+                                                </div>
+
+                                                <!-- ************************** -->
+                                                <!-- ********* TABLE ********** -->
+                                                <!-- ************************** -->
+                                                <div class="table__border">
+                                                    <!-- ********* Image Screenshot ********** -->
+                                                    <img class="img80 img__padding" src="img/photos/ReasonForm.png"
+                                                        alt="Reason Form Screenshot">
+                                                </div>
+
+                                                <!-- ********* 1. FREE TEXT ********** -->
+                                                <div class="table__border">
+                                                    <div>
+                                                        <p class="p__title text--indentSmall"><span
+                                                                class="text--red">[1]</span>
+                                                            Free Text:
+                                                        </p>
+                                                        <p class="p__text">
+                                                            <ul class="text--indentSmall">
+                                                                <li>This is a free text field, but we ask to the
+                                                                    clinician to use the content from the "Select
+                                                                    from
+                                                                    list" <span class="text--red">[2]</span> as
+                                                                    much as possible.
+                                                                </li>
+                                                            </ul>
+                                                        </p>
+                                                        <div class="background--important table--indent">
+                                                            <span
+                                                                class="p__title text--strong text--indentSmall">IMPORTANT:</span>
+                                                            <ul class="text--indentSmall">
+                                                                <li class="p__text"><span class="text--strong">If a
+                                                                        note
+                                                                        is written
+                                                                        at a later date than the consultation date,
+                                                                        the
+                                                                        clinician should add "Late Note" to the
+                                                                        reason
+                                                                        for
+                                                                        consultation</span></br>
+                                                                    o Example : Convulsion-2409 // Late Note</li>
+                                                                <li class="p__text"><span class="text--strong">For
+                                                                        Nurses: When a nurse needs to
+                                                                        create a note when he/she on call. the nurse
+                                                                        should
+                                                                        add “Nurse On Call” to the reason for
+                                                                        consultation.</span></br>
+                                                                    o Example : Convulsion-2409 // Nurse On Call
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- ********* 2. SELECT FROM LIST ********** -->
+                                                <div class="table__border">
+                                                    <div>
+                                                        <p class="p__title text--indentSmall"><span
+                                                                class="text--red">[2]</span>
+                                                            Select from list:
+                                                        </p>
+                                                        <p class="p__text">
+                                                            <ul class="text--indentSmall">
+                                                                <li>The Consultation Reason can be document by using
+                                                                    the
+                                                                    “Select from list” <span
+                                                                        class="text--red">[2A]</span>.
+                                                                </li>
+                                                                <li>For statistic purpose, as much as possible, use
+                                                                    the
+                                                                    content from the "Select from list" to document
+                                                                    the
+                                                                    reason of consultation.</li>
+                                                            </ul>
+                                                            <img class="img80 img__padding img--center"
+                                                                src="img/photos/ReasonSFL.png"
+                                                                alt="Reason Select from list Screenshot">
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- ********* 3. The [+] button ********** -->
+                                                <div class="table__border">
+                                                    <div>
+                                                        <p class="p__title text--indentSmall"><span
+                                                                class="text--red">[3]</span>
+                                                            The [+] button:
+                                                        </p>
+                                                        <p class="p__text">
+                                                            <ul class="text--indentSmall">
+                                                                <li>When pressing the [+] button, the “Reason for
+                                                                    Visit:
+                                                                    Note” Popup window appear and the user can add a
+                                                                    note <span class="text--red">[A]</span>.
+                                                                </li>
+                                                                <li>By pressing on “Submit” <span
+                                                                        class="text--red">[B]</span>, the content
+                                                                    will
+                                                                    be added with the name of the user who made the
+                                                                    addition and will be timestamp <span
+                                                                        class="text--red">[C]</span>.</li>
+                                                            </ul>
+                                                        </p>
+                                                        <div class="background--important table--indent">
+                                                            <span
+                                                                class="p__title text--strong text--indentSmall">IMPORTANT:</span>
+                                                            <ul class="text--indentSmall">
+                                                                <li class="text--strong">Using the [+] button is the
+                                                                    equivalent of an annotation in the margin of the
+                                                                    paper file.
+                                                                </li>
+                                                                <li class="text--strong">The [+] button, can also be
+                                                                    used to clarify or add to a note already
+                                                                    approved,
+                                                                    whatever if the note was written by the user
+                                                                    itself
+                                                                    or by another user.</li>
+                                                                <li class="text--strong">If the note is printed, the
+                                                                    content of the “Reason for Visit: Note” <span
+                                                                        class="text--red">[C]</span> will not be on
+                                                                    the
+                                                                    printout.</li>
+                                                            </ul>
+                                                            <img class="img100 img__padding"
+                                                                src="img/photos/Reason+.png" alt="Reason + Screenshot">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- ************************************ -->
+                                    <!-- **************** HPI *************** -->
+                                    <!-- ************************************ -->
+                                    <div class="card">
+                                        <div class="card-header background--darkGrey" id="headingTwelve">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse"
+                                                    data-target="#collapseTwelve" aria-expanded="true"
+                                                    aria-controls="collapseTwelve">
+                                                    <h4 class="text--white">History of Present Illness</h4>
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p class="p__title background--veryImportant text--white">VERY
+                                                    IMPORTANT:<br>
+                                                    Do not use this field.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- ************************************ -->
+                                    <!-- *********** VITAL SIGNS ************ -->
+                                    <!-- ************************************ -->
+                                    <div class="card">
+                                        <div class="card-header background--blue" id="headingThirteen">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse"
+                                                    data-target="#collapseThirteen" aria-expanded="true"
+                                                    aria-controls="collapseThirteen">
+                                                    <h4 class="text--white">Vital Signs</h4>
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen"
+                                            data-parent="#accordion">
+                                            <div class="card-body text--left">
+                                                <div class="paddingTop--verySmall">
+
+                                                    <!-- ********* IMPORTANT ********** -->
+                                                    <div class="background--important">
+                                                        <p class="p__title text-center">IMPORTANT</p>
+                                                        <p class="p__text text--strong text-center">
+                                                            <ul>
+                                                                <li class="text--strong">All pertinent Life Support
+                                                                    Measure needs to be
+                                                                    documented in the “Note” field.</li>
+                                                                <li class="text--strong">There is no alert for
+                                                                    Abnormal or Critical
+                                                                    Value Entry.</li>
+                                                                <li class="text--strong">It’s the latest Vital Signs
+                                                                    entry that will
+                                                                    appear in the Main Patient Summary (when a user
+                                                                    enters in a Patient File) <span
+                                                                        class="text--red">[A]</span> and in the New
+                                                                    Note Patient Summary (when a user creates a New
+                                                                    Note) <span class="text--red">[B]</span>.</li>
+                                                            </ul>
+                                                        </p>
+                                                        <img class="img100 img__padding img--center"
+                                                            src="img/photos/VitalSignsImportant.png"
+                                                            alt="Vital Signs Results Screenshot">
+                                                    </div>
+                                                </div>
+
+                                                <div class="paddingTop--small paddingBottom--verySmall">
+                                                    <p> <span class="p__title">Purpose: </span>
+                                                        To document the Vital Signs and other parameters.</p>
+                                                </div>
+
+                                                <!-- ************************** -->
+                                                <!-- ********* TABLE ********** -->
+                                                <!-- ************************** -->
+                                                <div class="table__border">
+                                                    <!-- ********* Image Screenshot ********** -->
+                                                    <img class="img80 img__padding img--center"
+                                                        src="img/photos/VitalSignsForm1.png"
+                                                        alt="Vital Signs Form Screenshot">
+                                                    </br>
+                                                    <img class="img80 img__padding img--center"
+                                                        src="img/photos/VitalSignsForm2.png"
+                                                        alt="Vital Signs Form Screenshot">
+
+                                                </div>
+
+                                                <!-- ********* 1. DATE SELECTOR ********** -->
+                                                <div class="table__border">
+                                                    <div>
+                                                        <p class="p__title text--indentSmall"><span
+                                                                class="text--red">[1]</span>
+                                                            Date Selector:
+                                                        </p>
+                                                        <div class="background--important table--indent">
+                                                            <span
+                                                                class="p__title text--strong text--indentSmall">IMPORTANT:</span>
+                                                            <ul class="text--indentSmall">
+                                                                <li class="p__text"><span class="text--strong">Historic
+                                                                        Vital Signs
+                                                                        Values
+                                                                        can be documented by
+                                                                        adjusting the Date and Time.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- ********* 6. O2 SAT ********** -->
+                                                <div class="table__border">
+                                                    <div>
+                                                        <p class="p__title text--indentSmall"><span
+                                                                class="text--red">[6]</span>
+                                                            O2 Sat:
+                                                        </p>
+                                                        <div class="background--important table--indent">
+                                                            <span
+                                                                class="p__title text--strong text--indentSmall">IMPORTANT:</span>
+                                                            <ul class="text--indentSmall">
+                                                                <li class="p__text"><span class="text--strong">There
+                                                                        no Free Text field to document if the
+                                                                        patient is
+                                                                        using mask, nasal canula or room air. So, it
+                                                                        needs to be documented in the “Note” field.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- ********* 8. Weight ********** -->
+                                                <div class="table__border">
+                                                    <div>
+                                                        <p class="p__title text--indentSmall"><span
+                                                                class="text--red">[8]</span>
+                                                            Weight
+                                                        </p>
+                                                    </div>
+                                                    <div class="paddingBottom--verySmall">
+                                                        <table class="table--layout table--indent">
+                                                            <tr class="table__headerBG">
+                                                                <th>Unit Measure</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text--strong">in</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text--strong">cm</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="background--important table--indent">
+                                                        <span
+                                                            class="p__title text--strong text--indentSmall">IMPORTANT:</span>
+                                                        <ul class="text--indentSmall">
+                                                            <li class="p__text"><span class="text--strong">To avoid
+                                                                    mistake, always choose the unit measure before
+                                                                    entering the number.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <!-- ********* 9. Height ********** -->
+                                                <div class="table__border">
+                                                    <div>
+                                                        <p class="p__title text--indentSmall"><span
+                                                                class="text--red">[9]</span>
+                                                            Height
+                                                        </p>
+                                                    </div>
+                                                    <div class="paddingBottom--verySmall">
+                                                        <table class="table--layout table--indent">
+                                                            <tr class="table__headerBG">
+                                                                <th>Unit Measure</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text--strong">in</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text--strong">cm</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="background--important table--indent">
+                                                        <span
+                                                            class="p__title text--strong text--indentSmall">IMPORTANT:</span>
+                                                        <ul class="text--indentSmall">
+                                                            <li class="p__text"><span class="text--strong">To avoid
+                                                                    mistake, always choose the unit measure before
+                                                                    entering the number.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <!-- ********* 10. BMI ********** -->
+                                                <div class="table__border">
+                                                    <div>
+                                                        <p class="p__title text--indentSmall"><span
+                                                                class="text--red">[10]</span>
+                                                            BMI:
+                                                        </p>
+                                                        <p class="p__text">
+                                                            <ul class="text--indentSmall">
+                                                                <li>Automatically calculated based on “Weight” and
+                                                                    “Height” Values.
+                                                                </li>
+                                                            </ul>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- ********* 11. Waist Circumference ********** -->
+                                                <div class="table__border">
+                                                    <div>
+                                                        <p class="p__title text--indentSmall"><span
+                                                                class="text--red">[11]</span>
+                                                            Waist Circumference:
+                                                        </p>
+                                                    </div>
+                                                    <div class="paddingBottom--verySmall">
+                                                        <table class="table--layout table--indent">
+                                                            <tr class="table__headerBG">
+                                                                <th>Unit Measure</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text--strong">in</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text--strong">cm</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="background--important table--indent">
+                                                        <span
+                                                            class="p__title text--strong text--indentSmall">IMPORTANT:</span>
+                                                        <ul class="text--indentSmall">
+                                                            <li class="p__text"><span class="text--strong">To avoid
+                                                                    mistake, always choose the unit measure before
+                                                                    entering the number.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <!-- ********* 12. Head Circumference: ********** -->
+                                                <div class="table__border">
+                                                    <div>
+                                                        <p class="p__title text--indentSmall"><span
+                                                                class="text--red">[12]</span>
+                                                            Head Circumference:
+                                                        </p>
+                                                    </div>
+                                                    <div class="paddingBottom--verySmall">
+                                                        <table class="table--layout table--indent">
+                                                            <tr class="table__headerBG">
+                                                                <th>Unit Measure</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text--strong">in</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text--strong">cm</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="background--important table--indent">
+                                                        <span
+                                                            class="p__title text--strong text--indentSmall">IMPORTANT:</span>
+                                                        <ul class="text--indentSmall">
+                                                            <li class="p__text"><span class="text--strong">To avoid
+                                                                    mistake, always choose the unit measure before
+                                                                    entering the number.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- ************************************ -->
+                                    <!-- *************** EXAM *************** -->
+                                    <!-- ************************************ -->
+                                    <div class="card">
+                                        <div class="card-header background--darkGrey" id="headingFourteen">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse"
+                                                    data-target="#collapseFourteen" aria-expanded="true"
+                                                    aria-controls="collapseFourteen">
+                                                    <h4 class="text--white">Exam</h4>
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p class="p__title background--veryImportant text--white">VERY
+                                                    IMPORTANT:<br>
+                                                    Do not use this field.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- ************************************ -->
+                                    <!-- ********* HANDWRITTEN NOTES ******** -->
+                                    <!-- ************************************ -->
+                                    <div class="card">
+                                        <div class="card-header background--darkGrey" id="headingFifteen">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse"
+                                                    data-target="#collapseFifteen" aria-expanded="true"
+                                                    aria-controls="collapseFifteen">
+                                                    <h4 class="text--white">Handwritten Notes</h4>
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p class="p__title background--veryImportant text--white">VERY
+                                                    IMPORTANT:<br>
+                                                    Do not use this field.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- ************************************ -->
+                                    <!-- ************ LABORATORY ************ -->
+                                    <!-- ************************************ -->
+                                    <div class="card">
+                                        <div class="card-header background--darkGrey" id="headingSixteen">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse"
+                                                    data-target="#collapseSixteen" aria-expanded="true"
+                                                    aria-controls="collapseSixteen">
+                                                    <h4 class="text--white">Laboratory</h4>
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p class="p__title background--veryImportant text--white">VERY
+                                                    IMPORTANT:<br>
+                                                    Do not use this field.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- ************************************ -->
+                                    <!-- ************* IMAGING ************** -->
+                                    <!-- ************************************ -->
+                                    <div class="card">
+                                        <div class="card-header background--darkGrey" id="headingSeventeen">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse"
+                                                    data-target="#collapseSeventeen" aria-expanded="true"
+                                                    aria-controls="collapseSeventeen">
+                                                    <h4 class="text--white">Imaging</h4>
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p class="p__title background--veryImportant text--white">VERY
+                                                    IMPORTANT:<br>
+                                                    Do not use this field.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- ************************************ -->
+                                    <!-- *** Other Notes and Interventions ** -->
+                                    <!-- ************************************ -->
+
+                                    <div class="card">
+                                        <div class="card-header background--blue" id="headingEighteen">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse"
+                                                    data-target="#collapseEighteen" aria-expanded="true"
+                                                    aria-controls="collapseEighteen">
+                                                    <h4 class="text--white">Other Notes and
+                                                        Interventions</h4>
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen"
+                                            data-parent="#accordion">
+                                            <div class="card-body text--left">
+
+                                                <div class="paddingTop--verySmall paddingBottom--verySmall">
+                                                    <p> <span class="p__title">Purpose: </span>
+                                                        <ul>
+                                                            <li>To document the intervention the clinician
+                                                                did
+                                                                to
+                                                                the patient like… procedure, intervention,
+                                                                point
+                                                                de
+                                                                suture, IUD installation, isolation,
+                                                                Chemical
+                                                                restraint, etc.</li>
+                                                            <li>All the information that doesn’t fit
+                                                                anywhere
+                                                                else
+                                                                can be put in “Other Notes and
+                                                                Interventions”.
+                                                            </li>
+                                                        </ul>
+                                                    </p>
+                                                </div>
+
+                                                <!-- ************************** -->
+                                                <!-- ********* TABLE ********** -->
+                                                <!-- ************************** -->
+                                                <div class="table__border">
+                                                    <!-- ********* Image Screenshot ********** -->
+                                                    <img class="img80 img__padding img--center"
+                                                        src="img/photos/OtherNoteForm.png"
+                                                        alt="Laboratory Select from list Screenshot">
+                                                </div>
+
+                                                <!-- ********* 1. FREE TEXT ********** -->
+                                                <div class="table__border">
+                                                    <div>
+                                                        <p class="p__title text--indentSmall"><span
+                                                                class="text--red">[1]</span>
+                                                            Free Text:
+                                                        </p>
+                                                        <p class="p__text">
+                                                            <ul class="text--indentSmall">
+                                                                <li>Other Notes and Interventions can be
+                                                                    document by
+                                                                    using Free
+                                                                    Text or Select from list.
+                                                                </li>
+                                                            </ul>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- ********* 2. SELECT FROM LIST ********** -->
+                                                <div class="table__border">
+                                                    <div>
+                                                        <p class="p__title text--indentSmall"><span
+                                                                class="text--red">[2]</span>
+                                                            Select from list:
+                                                        </p>
+                                                        <p class="p__text">
+                                                            <ul class="text--indentSmall">
+                                                                <li>Other Notes and Interventions can be
+                                                                    document by
+                                                                    using Free
+                                                                    Text or Select from list.
+                                                                </li>
+                                                            </ul>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- ********* 3. The [+] button ********** -->
+                                                <div class="table__border">
+                                                    <div>
+                                                        <p class="p__title text--indentSmall"><span
+                                                                class="text--red">[3]</span>
+                                                            The [+] button:
+                                                        </p>
+                                                        <p class="p__text">
+                                                            <ul class="text--indentSmall">
+                                                                <li>When pressing the [+] button, the
+                                                                    “Other Notes and Interventions: Note”
+                                                                    Popup
+                                                                    window
+                                                                    appear and the user
+                                                                    can add a
+                                                                    note <span class="text--red">[A]</span>.
+                                                                </li>
+                                                                <li>By pressing on “Submit” <span
+                                                                        class="text--red">[B]</span>, the
+                                                                    content will
+                                                                    be added with the name of the user who
+                                                                    made the
+                                                                    addition and will be timestamp <span
+                                                                        class="text--red">[C]</span>.</li>
+                                                            </ul>
+                                                        </p>
+
+
+                                                        <div class="background--important table--indent">
+                                                            <span
+                                                                class="p__title text--strong text--indentSmall">IMPORTANT:</span>
+                                                            <ul class="text--indentSmall">
+                                                                <li class="text--strong">Using the [+] button is the
+                                                                    equivalent of an annotation in the margin of the
+                                                                    paper file.
+                                                                </li>
+                                                                <li class="text--strong">The [+] button, can also be
+                                                                    used to clarify or add to a note already
+                                                                    approved,
+                                                                    whatever if the note was written by the user
+                                                                    itself
+                                                                    or by another user.</li>
+                                                                <li class="text--strong">If the note is printed, the
+                                                                    content of the “Other Notes and Interventions:
+                                                                    Notes” <span class="text--red">[C]</span> will not
+                                                                    be on
+                                                                    the
+                                                                    printout.</li>
+                                                            </ul>
+                                                            <img class="img100 img__padding"
+                                                                src="img/photos/OtherNote+.png"
+                                                                alt="Reason + Screenshot">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- ************************************ -->
+                                    <!-- ********* Section: FORMS *********** -->
+                                    <!-- ************************************ -->
+                                    <h3 class="paddingTop--verySmall text--strong text--left">Forms
+                                    </h3>
+                                    <div id="accordion">
+
+                                        <!-- ************************************ -->
+                                        <!-- ************** FORMS *************** -->
+                                        <!-- ************************************ -->
+
+                                        <div class="card">
+                                            <div class="card-header background--darkGrey" id="headingNineteen">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link" data-toggle="collapse"
+                                                        data-target="#collapseNineteen" aria-expanded="true"
+                                                        aria-controls="collapseNineteen">
+                                                        <h4 class="text--white">Forms</h4>
+                                                    </button>
+                                                </h5>
+                                            </div>
+
+                                            <div id="collapseNineteen" class="collapse"
+                                                aria-labelledby="headingNineteen" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <p class="p__title background--veryImportant text--white">VERY
+                                                        IMPORTANT:<br>
+                                                        Do not use this field.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <!-- ************************************ -->
+                                        <!-- ************* CNESST *************** -->
+                                        <!-- ************************************ -->
+                                        <div class="card">
+                                            <div class="card-header background--darkGrey" id="headingTwenty">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link" data-toggle="collapse"
+                                                        data-target="#collapseTwenty" aria-expanded="true"
+                                                        aria-controls="collapseTwenty">
+                                                        <h4 class="text--white">CNESST</h4>
+                                                    </button>
+                                                </h5>
+                                            </div>
+
+                                            <div id="collapseTwenty" class="collapse background--lightGrey"
+                                                aria-labelledby="heading" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <p class="p__title background--veryImportant text--white">VERY
+                                                        IMPORTANT:<br>
+                                                        Do not use this field.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <!-- ************************************ -->
+                                        <!-- ******* Section: ASSESSMENT ******** -->
+                                        <!-- ************************************ -->
+                                        <h3 class="paddingTop--verySmall text--strong text--left">
+                                            Assessment</h3>
+                                        <div id="accordion">
+
+                                            <!-- ************************************ -->
+                                            <!-- ********* PROBLEM / DIAGNOSIS ****** -->
+                                            <!-- ************************************ -->
+
+                                            <div class="card">
+                                                <div class="card-header background--darkGrey" id="headingTwentyone">
+                                                    <h5 class="mb-0">
+                                                        <button class="btn btn-link" data-toggle="collapse"
+                                                            data-target="#collapseTwentyone" aria-expanded="true"
+                                                            aria-controls="collapseTwentyone">
+                                                            <h4 class="text--white">Problem / Diagnosis</h4>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="collapseTwentyone" class="collapse background--lightGrey"
+                                                    aria-labelledby="heading" data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <p class="p__title background--veryImportant text--white">VERY
+                                                            IMPORTANT:<br>
+                                                            Do not use this field.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- ************************************ -->
+                                            <!-- ********* Section: PLAN ************ -->
+                                            <!-- ************************************ -->
+                                            <h3 class=" paddingTop--verySmall text--strong text--left">Plan
+                                            </h3>
+                                            <div id="accordion">
+
+                                                <!-- ************************************ -->
+                                                <!-- *********** PRESCRIPTION *********** -->
+                                                <!-- ************************************ -->
+                                                <div class="card">
+                                                    <div class="card-header background--darkGrey" id="headingTwentytwo">
+                                                        <h5 class="mb-0">
+                                                            <button class="btn btn-link" data-toggle="collapse"
+                                                                data-target="#collapseTwentytwo" aria-expanded="true"
+                                                                aria-controls="collapseTwentytwo">
+                                                                <h4 class="text--white">
+                                                                    Prescription</h4>
+                                                            </button>
+                                                        </h5>
+                                                    </div>
+
+                                                    <div id="collapseTwentytwo" class="collapse background--lightGrey"
+                                                        aria-labelledby="heading" data-parent="#accordion">
+                                                        <div class="card-body">
+                                                            <p class="p__title background--veryImportant text--white">
+                                                                VERY
+                                                                IMPORTANT:<br>
+                                                                Do not use this field.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <!-- ************************************ -->
+                                                <!-- *********** EXAM REQUEST *********** -->
+                                                <!-- ************************************ -->
+                                                <div class="card">
+                                                    <div class="card-header background--darkGrey"
+                                                        id="headingTwentythree">
+                                                        <h5 class="mb-0">
+                                                            <button class="btn btn-link" data-toggle="collapse"
+                                                                data-target="#collapseTwentythree" aria-expanded="true"
+                                                                aria-controls="collapseTwentythree">
+                                                                <h4 class="text--white">
+                                                                    Exam Request</h4>
+                                                            </button>
+                                                        </h5>
+                                                    </div>
+
+                                                    <div id="collapseTwentythree" class="collapse background--lightGrey"
+                                                        aria-labelledby="heading" data-parent="#accordion">
+                                                        <div class="card-body">
+                                                            <p class="p__title background--veryImportant text--white">
+                                                                VERY
+                                                                IMPORTANT:<br>
+                                                                Do not use this field.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <!-- ************************************ -->
+                                                <!-- ****** CONSULTATION REQUEST ******** -->
+                                                <!-- ************************************ -->
+                                                <div class="card">
+                                                    <div class="card-header background--darkGrey"
+                                                        id="headingTwentyfour">
+                                                        <h5 class="mb-0">
+                                                            <button class="btn btn-link" data-toggle="collapse"
+                                                                data-target="#collapseTwentyfour" aria-expanded="true"
+                                                                aria-controls="collapseTwentyfour">
+                                                                <h4 class="text--white">
+                                                                    Consultation Request
+                                                                </h4>
+                                                            </button>
+                                                        </h5>
+                                                    </div>
+
+                                                    <div id="collapseTwentyfour" class="collapse background--lightGrey"
+                                                        aria-labelledby="heading" data-parent="#accordion">
+                                                        <div class="card-body">
+                                                            <p class="p__title background--veryImportant text--white">
+                                                                VERY
+                                                                IMPORTANT:<br>
+                                                                Do not use this field.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <!-- ************************************ -->
+                                                <!-- ******** FOLLOW UP AND PLAN ******** -->
+                                                <!-- ************************************ -->
+                                                <div class="card">
+                                                    <div class="card-header background--blue" id="headingTwentyfive">
+                                                        <h5 class="mb-0">
+                                                            <button class="btn btn-link" data-toggle="collapse"
+                                                                data-target="#collapseTwentyfive" aria-expanded="true"
+                                                                aria-controls="collapseTwentyfive">
+                                                                <h4 class="text--white">
+                                                                    Follow Up and Plan
+                                                                </h4>
+                                                            </button>
+                                                        </h5>
+                                                    </div>
+
+                                                    <div id="collapseTwentyfive" class="collapse"
+                                                        aria-labelledby="headingTwentyfive" data-parent="#accordion">
+                                                        <div class="card-body text--left">
+                                                            <div class="paddingTop--verySmall paddingBottom--verySmall">
+                                                                <p> <span class="p__title">Purpose:
+                                                                    </span>
+                                                                    To document the
+                                                                    follow up and plan
+                                                                    for
+                                                                    the patient.
+                                                                </p>
+                                                            </div>
+
+                                                            <!-- ************************** -->
+                                                            <!-- ********* TABLE ********** -->
+                                                            <!-- ************************** -->
+                                                            <div class="table__border">
+                                                                <!-- ********* Image Screenshot ********** -->
+                                                                <img class="img100 img__padding"
+                                                                    src="img/photos/FollowUpForm.png"
+                                                                    alt="Follow Up Field Screenshot">
+                                                            </div>
+
+                                                            <!-- ********* 1. FREE TEXT ********** -->
+                                                            <div class="table__border">
+                                                                <div>
+                                                                    <p class="p__title text--indentSmall">
+                                                                        <span class="text--red">[1]</span>
+                                                                        Free Text:
+                                                                    </p>
+                                                                    <p class="p__text">
+                                                                        <ul class="text--indentSmall">
+                                                                            <li>Follow
+                                                                                Up and
+                                                                                Plan can
+                                                                                be
+                                                                                document
+                                                                                by using
+                                                                                Free
+                                                                                Text or
+                                                                                Select
+                                                                                from
+                                                                                list.
+                                                                            </li>
+                                                                        </ul>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- ********* 2. SELECT FROM LIST ********** -->
+                                                            <div class="table__border">
+                                                                <div>
+                                                                    <p class="p__title text--indentSmall">
+                                                                        <span class="text--red">[2]</span>
+                                                                        Select from
+                                                                        list:
+                                                                    </p>
+                                                                    <p class="p__text">
+                                                                        <ul class="text--indentSmall">
+                                                                            <li>Imaging
+                                                                                Report
+                                                                                can be
+                                                                                document
+                                                                                by
+                                                                                using
+                                                                                Free
+                                                                                Text or
+                                                                                Select
+                                                                                from
+                                                                                list.
+                                                                            </li>
+                                                                        </ul>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- ********* 3. The [+] button ********** -->
+                                                            <div class="table__border">
+                                                                <div>
+                                                                    <p class="p__title text--indentSmall">
+                                                                        <span class="text--red">[3]</span>
+                                                                        The [+] button:
+                                                                    </p>
+                                                                    <p class="p__text">
+                                                                        <ul class="text--indentSmall">
+                                                                            <li>When
+                                                                                pressing
+                                                                                the [+]
+                                                                                button,
+                                                                                the
+                                                                                “Follow
+                                                                                Up and
+                                                                                Plan:
+                                                                                Notes”
+                                                                                Popup
+                                                                                window
+                                                                                appear
+                                                                                and the
+                                                                                user
+                                                                                can add
+                                                                                a
+                                                                                note
+                                                                                <span class="text--red">[A]</span>.
+                                                                            </li>
+                                                                            <li>By
+                                                                                pressing
+                                                                                on
+                                                                                “Submit”
+                                                                                <span class="text--red">[B]</span>,
+                                                                                the
+                                                                                content
+                                                                                will
+                                                                                be added
+                                                                                with the
+                                                                                name of
+                                                                                the
+                                                                                user
+                                                                                who
+                                                                                made the
+                                                                                addition
+                                                                                and will
+                                                                                be
+                                                                                timestamp
+                                                                                <span class="text--red">[C]</span>.
+                                                                            </li>
+                                                                        </ul>
+                                                                        <span
+                                                                            class="p__title text--strong text--indentSmall">IMPORTANT:</span>
+                                                                        <ul class="text--indentSmall">
+                                                                            <li class="text--strong">
+                                                                                Using
+                                                                                the
+                                                                                [+]
+                                                                                button
+                                                                                is the
+                                                                                equivalent
+                                                                                of an
+                                                                                annotation
+                                                                                in
+                                                                                the
+                                                                                margin
+                                                                                of the
+                                                                                paper
+                                                                                file.
+                                                                            </li>
+                                                                            <li class="text--strong">
+                                                                                The [+]
+                                                                                button,
+                                                                                can
+                                                                                also be
+                                                                                used to
+                                                                                clarify
+                                                                                or add
+                                                                                to a
+                                                                                note
+                                                                                already
+                                                                                approved,
+                                                                                whatever
+                                                                                if the
+                                                                                note was
+                                                                                written
+                                                                                by
+                                                                                the
+                                                                                user
+                                                                                itself
+                                                                                or by
+                                                                                another
+                                                                                user.
+                                                                            </li>
+                                                                            <li class="text--strong">
+                                                                                If the
+                                                                                note
+                                                                                is
+                                                                                printed,
+                                                                                the
+                                                                                content
+                                                                                of the
+                                                                                “Follow
+                                                                                Up
+                                                                                and
+                                                                                Plan:
+                                                                                Notes”
+                                                                                <span class="text--red">[C]</span>
+                                                                                will
+                                                                                not be
+                                                                                on the
+                                                                                printout.
+                                                                            </li>
+                                                                        </ul>
+                                                                        <img class="img100 img__padding img--center"
+                                                                            src="img/photos/FollowUp+.PNG"
+                                                                            alt="Laboratory + Screenshot">
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <!-- ************************************ -->
+                                                <!-- *********** COMMUNICATION ********** -->
+                                                <!-- ************************************ -->
+                                                <div class="card">
+                                                    <div class="card-header background--darkGrey" id="headingTwentysix">
+                                                        <h5 class="mb-0">
+                                                            <button class="btn btn-link" data-toggle="collapse"
+                                                                data-target="#collapseTwentysix" aria-expanded="true"
+                                                                aria-controls="collapseTwentysix">
+                                                                <h4 class="text--white">
+                                                                    Communication</h4>
+                                                            </button>
+                                                        </h5>
+                                                    </div>
+
+                                                    <div id="collapseTwentysix" class="collapse background--lightGrey"
+                                                        aria-labelledby="heading" data-parent="#accordion">
+                                                        <div class="card-body">
+                                                            <p class="p__title background--veryImportant text--white">
+                                                                VERY
+                                                                IMPORTANT:<br>
+                                                                Do not use this field.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <!-- ************************************ -->
+    <!-- ********** PIED DE PAGE ************ -->
+    <!-- ************************************ -->
+
+    <footer>
+        <div class="container-fluid background--black text--white paddingTop--large paddingBottom--large">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h4>MYLE Support</h4>
+                    <p>
+                        <h6>18tcr.emrsupport@ssss.gouv.qc.ca</h6>
+                    </p>
+                    <p>
+                        <h6>(418) 923-3376 Ext.42111</h6>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="service-worker.js"></script>
+    <script src="js/install.js"></script>
+
+</body>
+
+</html>

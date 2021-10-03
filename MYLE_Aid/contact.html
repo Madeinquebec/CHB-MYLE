@@ -1,0 +1,183 @@
+<!--- mouvements.html --->
+<!--- Programme par : Eric Gosselin --->
+<!--- Derniere modification : 202-08-22 --->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Crossfit</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style/css/general.css">
+    <link rel="stylesheet" href="style/css/banner.css">
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="CrossFit">
+    <link rel="apple-touch-icon" href="/img/icons/icon-152x152.png">
+    <meta name="theme-color" content="#2F3BA2">
+    <meta name="description" content="Ceci est une app pour le CrossFit">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid img-fluid">
+            <div class="row text-center">
+                <div class="col-12">
+
+                    <!-- ************************************ -->
+                    <!-- ********** NAV BAR ***************** -->
+                    <!-- ************************************ -->
+
+                    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+                    <nav class="navbar navbar-expand-lg navbar-light header--link">
+                        <!-- Ce qu'on met ici ne sera pas dans le hamburger -->
+                        <a class="navbar-brand" href="#">
+                            <img id="imgLogo" src="img/logo/myleAidLogo.png" alt="Logo CrossFit">
+                        </a>
+
+                        <!-- Section hamburger' -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <!-- Image du hamburger -->
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                        <!-- Ci-dessous disparait dans le hamburger -->
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav mx-auto">
+                                <a class="nav-item nav-link" href="index.html">
+                                    <h5>Accueil</h5>
+                                </a>
+                                <a class="nav-item nav-link" href="concept-fitness.html">
+                                    <h5>Concept de Fitness</h5>
+                                </a>
+                                <a class="nav-item nav-link" href="entrainements.html">
+                                    <h5>Entrainements</h5>
+                                </a>
+                                <a class="nav-item nav-link" href="documentaire.html">
+                                    <h5>Documentaire</h5>
+                                </a>
+                                <a class="nav-item nav-link active" href="contact.html">
+                                    <h5>Contact</h5>
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ************************************ -->
+    <!-- ****** FORMULAIRE DE CONTACT ******* -->
+    <!-- ************************************ -->
+    <section>
+        <div class="container-fluid paddingTop--medium paddingBottom--large background--lightGrey">
+            <div class="row">
+                <!--Formulaire-->
+                <div class="offset-md-1 col-md-10 col-12">
+                    <h3 class="text--strong">Contact Form</h3>
+                    <h5 class="paddingBottom--small paddingTop--small">Send us any concerns, problems or suggestions.
+                    </h5>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label for="inputLastName">Last Name *</label>
+                                <input type="text" class="form-control" id="inputLastName" minlength="2" maxlength="50"
+                                    required>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="inputFirst">First Name *</label>
+                                <input type="text" class="form-control" id="inputFirst" minlength="2" maxlength="50"
+                                    required>
+                            </div>
+
+
+
+                            <div class="form-group col-6">
+                                <label for="inputEmail">Email *</label>
+                                <input type="email" class="form-control" id="inputEmail" minlength="2" maxlength="50"
+                                    required>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="phoneNo">Phone number</label>
+                                <input type="text" class="form-control" id="phoneNo" minlength="2" maxlength="50">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="inputLevel">Community</label>
+                                <select id="inputLevel" class="form-control">
+                                    <option>Choose your community</option>
+                                    <option>Chisasibi</option>
+                                    <option>Mistissini</option>
+                                    <option>Waskaganish</option>
+                                    <option>Ouje-Bougoumou</option>
+                                    <option>Nemaska</option>
+                                    <option>Whapmagoostui</option>
+                                    <option>Waswanipi</option>
+                                    <option>Wemindji</option>
+                                    <option>Eastmain</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="message">Message</label>
+                                <input type="textarea" class="form-control" id="message" minlength="2" maxlength="300">
+                            </div>
+                        </div>
+                        <div class="form-row paddingBottom--large">
+                            <div>
+                                <button type="submit">
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ************************************ -->
+    <!-- ********** PIED DE PAGE ************ -->
+    <!-- ************************************ -->
+
+    <footer>
+        <div class="container-fluid background--black text--white paddingTop--large paddingBottom--large">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h4>Contact MYLE Team</h4>
+                    <p>
+                        <h5>18tcr.emrsupport@ssss.gouv.qc.ca</h5>
+                    </p>
+                    <p>
+                        <h5>(418) 923-3376 Ext.42111</h5>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="service-worker.js"></script>
+    <script src="js/install.js"></script>
+
+</body>
+
+</html>
